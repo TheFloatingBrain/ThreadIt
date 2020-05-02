@@ -1,0 +1,27 @@
+cls
+color 9
+D:\LibsAndSDKs\UCC\PreAlpha\nacl_sdk\pepper_27\toolchain\win_x86_newlib\bin\x86_64-nacl-g++.exe ^
+-m64 ^
+-std=c++0x ^
+-pthread ^
+./*.cpp ^
+-L D:\LibsAndSDKs\UCC\PreAlpha\nacl_sdk\pepper_27\lib\newlib_x86_64\Release ^
+-I D:\LibsAndSDKs\UCC\PreAlpha\nacl_sdk\pepper_27\include ^
+-I D:\MyStuff\Projects\ComputerProgramming\MultiLangual\VRGE\CallItLater ^
+-I ./ ^
+-l ppapi ^
+-l ppapi_cpp ^
+-c
+pause
+D:\LibsAndSDKs\UCC\PreAlpha\nacl_sdk\pepper_27\toolchain\win_x86_newlib\bin\i686-nacl-g++.exe ^
+-m32 ^
+-std=c++0x ^
+-pthread ^
+./*.cpp ^
+-L D:\LibsAndSDKs\UCC\PreAlpha\nacl_sdk\pepper_27\lib\newlib_x86_32\Release ^
+-I D:\LibsAndSDKs\UCC\PreAlpha\nacl_sdk\pepper_27\include ^
+-I D:\MyStuff\Projects\ComputerProgramming\MultiLangual\VRGE\CallItLater ^
+-I ./ ^
+-l ppapi ^
+-l ppapi_cpp ^
+-c
